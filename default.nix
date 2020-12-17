@@ -23,6 +23,7 @@ in pkgs.dockerTools.buildLayeredImage rec {
     Entrypoint = [ "${redis}/bin/redis-server"
                    "--unixsocket" "/home/redis.socket"
                    "--unixsocketperm" "775"
+                   "--port" "0"
                    "--daemonize" "no"
                    "--stop-writes-on-bgsave-error" "no"
                    "--rdbcompression" "yes"
