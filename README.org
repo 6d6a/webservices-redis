@@ -1,0 +1,13 @@
+[[https://www.docker.com/][Docker]] container with [[https://redis.io/][Redis]] key-value cache and store builded by [[https://nixos.org/][Nix package
+manager]].
+
+* Requirements
+
+The latest version of [[https://nixos.org/][Nix package manager]].
+
+* Building from Git
+
+  #+begin_src bash
+    nix-build
+    docker load --input result
+  #+end_src
